@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "./components/HelloWorld.vue";
+import Index from "./components/Index";
 import { invoke } from "@tauri-apps/api";
 import { ref } from "vue";
 const value = ref("2");
@@ -15,14 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((err) => {
       value.value = "xxx";
-    })
+    });
 });
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  {{ value }}
+  <Index />
 </template>
 
 <style>

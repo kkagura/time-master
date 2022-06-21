@@ -12,7 +12,13 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "all": true,
+      "http": {
+        "scope": [
+          "http://**",
+          "https://**"
+        ]
+      }
     },
     "bundle": {
       "active": true,
@@ -29,7 +35,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "time-master",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
